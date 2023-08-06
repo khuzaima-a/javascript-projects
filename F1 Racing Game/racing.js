@@ -14,7 +14,7 @@ let keys = {
 };
 
 let player = {
-  speed: 5,
+  speed: 7,
   score: 0,
   start: false,
   move: 6
@@ -29,7 +29,7 @@ function gamePlay() {
   moveBorder(border);
   moveCars(car);
 
- if (player.score % 400 === 0) {
+ if (player.score % 300 === 0) {
     player.speed++;
   }
 
@@ -65,8 +65,6 @@ function startGame() {
   startScreen.classList.add("hide");
   gameArea.innerHTML = "";
   player.start = true;
-  player.score = 0;
-  player.speed = 5;
   window.requestAnimationFrame(gamePlay);
 
   for (var i = 0; i < 5; i++) {
@@ -161,6 +159,7 @@ function moveCars(car) {
     }
     let random = Math.random() * (0.60 - 0.40) + 0.40;
     cars[i].position += (player.speed) * random;
+    cars[i].position = Math.round(cars[i].position);
     cars[i].style.top = cars[i].position + "px";
   }
 }
