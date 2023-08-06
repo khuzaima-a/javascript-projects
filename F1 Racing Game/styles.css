@@ -1,0 +1,72 @@
+ * {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #228c0d;
+}
+
+.hide {
+    display: none;
+}
+
+.car, .opponentCar {
+    width: 35px;
+    height: auto;
+    position: absolute;
+    left:180px;
+    top: 530px;
+}
+
+#gameArea {
+    background-color: #2d3436 ;
+    width: 400px;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.lines, .borderLines {
+    width : 10px;
+    background-color: white;
+    height: 100px;
+    margin-left: 195px;
+    position: absolute;
+}
+
+#startScreen {
+    background-color: rgba(156, 14, 14, 0.591);
+    color:white;
+    width:40%;
+    height: 15vh;
+    font-size: 1.4rem;
+    text-align: center;
+    padding:10px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 6px 6px 30px rgba(156, 14, 14, 0.591);
+    line-height: 7.5vh;
+}
+
+#scorecard {
+    display: grid;
+    place-items: center;
+    background-color: #2d3436 ;
+    width: 30%;
+    height: 10vh;
+    position: absolute;
+    left: 30px;
+    top:5vh;
+    border-radius: 20px;
+    color:white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
