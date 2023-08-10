@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 400px;
+    background-image: linear-gradient(to right, rgb(199, 131, 3), rgb(244, 203, 39));
+    border-radius: 30px;
+    max-width: 70vw;
+    padding-block: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    place-items: center;
+    opacity: 0.95;
+    box-shadow: 8px 7px 15px rgb(199, 131, 3)
+}
+
+#saves-ol {
+    list-style-type: square;
+}
+
+#saves-ol li {
+    padding-left: 15px;
+}
+
+.timer {
+    text-align: center;
+    padding-inline:10px;
+    font-size: 45px;
+}
+
+.timer::selection, #saves-ol li::selection {
+    background-color: black;
+    color:rgb(244, 203, 39);
+}
+
+.buttons {
+    text-align: center;
+}
+
+i {
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #000;
+    transition: 0.5s
+}
+
+#down {
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .timer {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .timer {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .timer {
+    font-size: 28px;
+  }
+}
