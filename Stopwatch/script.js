@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   down.onclick = () => {
     saves.classList.toggle('hide')
+    down.classList.toggle('rotate')
   }
 
   resetBtn.onclick = function () {
