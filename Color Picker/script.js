@@ -27,7 +27,7 @@ function init() {
         sqauresContainer.style.border = "5px solid green";
 
         score.innerText++;
-        setTimeout(init, 2000);
+        setTimeout(init, 1000);
       } else {
         lives.innerText = lives.innerText - 1;
         if (lives.innerText == 1) {
@@ -36,12 +36,12 @@ function init() {
         } else {
           sqauresContainer.style.borderTop = "5px solid red";
           sqauresContainer.style.borderBottom = "5px solid red";
-          squares[i].style.border = "7px solid green";
+          squares[i].style.border = "7px solid white";
           score.innerText = score.innerText - 1;
           setTimeout(() => {
             squares[i].style.border = "none";
             init();
-          }, 2000);
+          }, 1000);
         }
       }
     };

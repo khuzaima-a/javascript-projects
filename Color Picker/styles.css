@@ -54,3 +54,49 @@ body{
     font-size: 1.5rem;
     font-family:'Times New Roman', Times, serif;
 } 
+
+
+@media only screen and (max-width: 550px) {
+    #squares {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding-inline: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .square {
+        width: 80px;
+        height: 80px;
+    }
+
+    #livesDiv, #scoresDiv {
+        padding-inline: 25px;
+        font-size: 1.3rem;
+    }
+
+    #color {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .square {
+        width: 60px;
+        height: 60px;
+    }
+
+    #squares {
+        padding-inline: 10px;
+    }
+
+    #livesDiv, #scoresDiv {
+        padding-inline: 10px;
+        font-size: 1.2rem;
+    }
+
+    #color {
+        font-size: 1.2rem;
+        padding-inline: 10px;
+    }
+}

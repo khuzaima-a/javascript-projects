@@ -29,7 +29,7 @@ function gamePlay() {
   moveBorder(border);
   moveCars(car);
 
- if (player.score % 300 === 0) {
+ if (player.score % 400 === 0) {
     player.speed++;
   }
 
