@@ -43,10 +43,10 @@ function gamePlay() {
     
     // At a given time,either left or right (1 key) can be pressed
     if (keys.ArrowLeft && player.fromLeft > 10) {
-      car.style.transform = `rotate(-13deg)`;
+      car.style.transform = `rotate(-7deg)`;
       player.fromLeft -= player.move;
     } else if (keys.ArrowRight && player.fromLeft < 360 - 10) {
-      car.style.transform = `rotate(13deg)`;
+      car.style.transform = `rotate(7deg)`;
       player.fromLeft += player.move;
     } else {
       car.style.transform = `rotate(0deg)`;
