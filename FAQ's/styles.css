@@ -49,7 +49,7 @@ body {
           height: auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   .accordion {
           margin-left: 0px;
   }
