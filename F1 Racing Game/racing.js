@@ -139,7 +139,7 @@ function moveLines(lines) {
 function moveBorder(border) {
   for (i = 0; i < border.length; i++) {
     if (border[i].position > 650) {
-      border[i].position -= 659;
+      border[i].position -= 660;
     }
     border[i].position += player.speed;
     border[i].style.top = border[i].position + "px";
