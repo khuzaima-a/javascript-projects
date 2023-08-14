@@ -1,10 +1,10 @@
 
 ### When you guess wrong first time: 
-![first wrong guess](game_1.png)
+![first wrong guess](../README/color_1.PNG)
 
 ### When you guess wrong second time (Score Decrements): 
-![second wrong guess](game_2.png)
+![second wrong guess](../README/color_2.PNG)
 
 ### When you guess correctly (Score Increments) 
-![correct guess](game_3.png)
+![correct guess](../README/color_3.PNG)
 

@@ -1,0 +1,1 @@
+![FAQs](../README/FAQs.PNG)

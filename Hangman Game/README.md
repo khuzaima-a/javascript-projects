@@ -1,0 +1,1 @@
+![FAQs](../README/hangman.PNG)

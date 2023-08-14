@@ -1,0 +1,1 @@
+![FAQs](../README/Qoute_generator.PNG)
