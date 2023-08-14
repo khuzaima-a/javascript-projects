@@ -1,1 +1,1 @@
-![F1 Racing Game](./game.jpg)
+![F1 Racing Game](./README_Assets/game.jpg)
