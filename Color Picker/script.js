@@ -27,7 +27,7 @@ function init() {
         sqauresContainer.style.border = "5px solid green";
 
         score.innerText++;
-        setTimeout(init, 1000);
+        setTimeout(init, 700);
       } else {
         lives.innerText = lives.innerText - 1;
         if (lives.innerText == 1) {
