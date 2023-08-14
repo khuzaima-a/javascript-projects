@@ -1,1 +1,1 @@
-![FAQs](../README/image_rating.PNG)
+![FAQs](../README/Image_rating.PNG)
