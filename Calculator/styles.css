@@ -5,7 +5,7 @@
 }
 
 body{
-          background-image: linear-gradient(to right, rgb(22,16,36), rgb(29, 20, 50));
+          background-color: rgb(22,16,36);
           min-height: 100vh;
           display: grid;
           place-items: center;
@@ -17,7 +17,7 @@ body{
           box-shadow: 0px 0px 40px rgb(74, 40, 116);
           border-radius: 25px;
           overflow: hidden;
-          border: 3px solid rgb(74, 43, 112);
+          border: 2px solid rgb(74, 43, 112);
 }
 
 h1{
