@@ -46,13 +46,11 @@ startBtn.onclick = function () {
 function turn(turnP, oppP) {
   console.log(turnP.name + "'s turn")
   if (turnP.name === p1name.innerText) {
-    p2name.style.border = "none";
+    p2name.style.border = "2px solid rgb(2, 2, 40)";
     p1name.style.border = "2px solid rgb(250, 2, 184)";
-    p1name.style.padding = "25px 10px 10px 10px";
   } else {
-    p1name.style.border = "none";
+    p1name.style.border = "2px solid rgb(2, 2, 40)";
     p2name.style.border = "2px solid rgb(232,116,0)";
-    p2name.style.padding = "25px 10px 10px 10px";
   }
 
   for (let box of boxes) {
@@ -123,8 +121,8 @@ message.onclick = function () {
 };
 
 function modifyName(name) {
-  if(name[name.length-1] === ' ') {
+  while(name[name.length-1] === ' ') {
     name = name.substring(0, name.length-1)
-  } 
+  }
   return name
 }

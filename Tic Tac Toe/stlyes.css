@@ -12,7 +12,7 @@ body {
 }
 
 .login {
-          width: 30vw;
+          width: 400px;
           border: 7px double rgb(250, 2, 184);
           background-color: rgb(2, 2, 40);
           border-radius: 20px;
@@ -56,7 +56,7 @@ input:focus {
           border-radius: 5px;
 }
 
-#startGame:hover {
+#startGame:hover, #startGame:focus {
           background-color: rgb(232,116,0);
           color: white;
           cursor: pointer;
@@ -77,9 +77,9 @@ input:focus {
           grid-template-columns: repeat(3, 140px);
           grid-template-rows: repeat(3, 140px);
           background-image: linear-gradient(to bottom right, rgb(250, 2, 184), rgb(232,116,0));
-          padding:2px;
+          padding:4px;
           gap: 4px;
-          border-radius: 5px;
+          border-radius: 8px;
           color: white;
           font-size: 50px;
           font-weight: bold;
@@ -107,6 +107,7 @@ input:focus {
           font-weight: bold;
           font-size: 40px;
           letter-spacing: 0.6em;
+          padding: 20px 5px 0px 5px;
 }
 
 #p2 > h3 {
@@ -118,6 +119,7 @@ input:focus {
           font-weight: bold;
           font-size: 40px;
           letter-spacing: 0.6em;
+          padding: 20px 5px 0px 5px;
 }
 
 #message {
@@ -126,6 +128,7 @@ input:focus {
           font-family: 'Shadows Into Light', cursive;
           padding: 100px 100px;
           cursor: pointer;
+          text-align: center;
 }
 
 .msgP1 {
@@ -136,4 +139,70 @@ input:focus {
 .msgP2 {
           border: 7px double rgb(232,116,0);
           color: rgb(232,116,0);
+}
+
+@media screen and (max-width: 900px) {
+          #gameArea {
+                    grid-template-columns: repeat(3, 110px);
+                    grid-template-rows: repeat(3, 120px);
+          }
+
+          #p1 > h3, #p2 > h3 {
+                    font-size: 30px;
+          }
+}
+
+@media screen and (max-width: 600px) {
+          #container {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto auto auto;
+                    gap: 20px;
+          }
+
+          #p1 > h3, #p2 > h3 {
+                    writing-mode:horizontal-tb; 
+                    transform: rotate(0deg);
+                    padding: 5px 0px 5px 20px;
+          }
+
+          #message {
+                    width: 80vw;;
+                    padding-inline:20px;
+          }
+}
+
+
+
+@media screen and (max-width: 500px) {
+          .login {
+                    width: 85vw;
+          }
+
+          input {
+                    width: 80%;
+          }
+
+           #gameArea {
+                    grid-template-columns: repeat(3, 25vw);
+                    grid-template-rows: repeat(3, 25vw);
+          }
+}
+
+@media screen and (max-width: 400px) {
+        #p1 > h3 , #p2 > h3 {
+                    font-size: 25px;
+        }
+
+        #gameArea {
+                    grid-template-columns: repeat(3, 25vw);
+                    grid-template-rows: repeat(3, 25vw);
+                    font-size: 35px;
+          }
+}
+
+
+@media screen and (max-width: 300px) {
+        .heading {
+                    font-size: 30px;
+        }
 }
