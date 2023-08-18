@@ -1,0 +1,139 @@
+* {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+}
+
+body {
+          background-color: rgb(2, 2, 40);
+          display: grid;
+          place-items: center;
+          min-height: 100vh;
+}
+
+.login {
+          width: 30vw;
+          border: 7px double rgb(250, 2, 184);
+          background-color: rgb(2, 2, 40);
+          border-radius: 20px;
+}
+
+#form {
+          display: grid;
+          place-items: center;
+          gap: 20px;
+          width: 100%;
+          padding: 60px 0px;
+}
+
+.heading {
+          color: rgb(232,116,0);
+          font-family: 'Shadows Into Light', cursive;;
+          font-size: 40px;
+}
+
+input {
+          width: 65%;
+          background-color: rgb(2, 2, 40);
+          font-size: 15px;
+          padding: 7px 12px;
+          outline: none;
+          border: 1px solid rgb(232,116,0);
+          color: white;
+          border-radius: 6px;
+}
+
+input:focus {
+          box-shadow: 0px 0px 10px 2px rgb(232,116,0);
+}
+
+#startGame {
+          outline: none;
+          color: rgb(232,116,0);;
+          background-color: inherit;
+          border: 1px solid rgb(232,116,0);
+          padding: 3px 15px;
+          border-radius: 5px;
+}
+
+#startGame:hover {
+          background-color: rgb(232,116,0);
+          color: white;
+          cursor: pointer;
+          box-shadow: 0px 0px 10px 2px rgb(232,116,0);
+}
+
+#container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          place-items: center;
+          grid-template-rows: 1fr;
+          width: 100%;
+          height: 100%;
+}
+
+#gameArea {
+          display: grid;
+          grid-template-columns: repeat(3, 140px);
+          grid-template-rows: repeat(3, 140px);
+          background-image: linear-gradient(to bottom right, rgb(250, 2, 184), rgb(232,116,0));
+          padding:2px;
+          gap: 4px;
+          border-radius: 5px;
+          color: white;
+          font-size: 50px;
+          font-weight: bold;
+          font-family: 'Shadows Into Light', cursive;
+}
+
+#gameArea>div {
+          background-color: rgb(2, 2, 40);
+          display: grid;
+          cursor: pointer;
+          place-content: center;
+}
+
+#gameArea>div:hover {
+          opacity: 0.8;
+}
+
+#p1 > h3 {
+          color: rgb(250, 2, 184);
+          writing-mode: vertical-rl; 
+          white-space: nowrap; 
+          transform: rotate(180deg);
+          transform-origin: center;
+          font-family: 'Shadows Into Light', cursive;;
+          font-weight: bold;
+          font-size: 40px;
+          letter-spacing: 0.6em;
+}
+
+#p2 > h3 {
+          color: rgb(232,116,0);
+          writing-mode: vertical-rl; 
+          white-space: nowrap; 
+          transform-origin: center;
+          font-family: 'Shadows Into Light', cursive;;
+          font-weight: bold;
+          font-size: 40px;
+          letter-spacing: 0.6em;
+}
+
+#message {
+          font-size: 30px;
+          border-radius: 15px;
+          font-family: 'Shadows Into Light', cursive;
+          padding: 100px 100px;
+          cursor: pointer;
+}
+
+.msgP1 {
+          border: 7px double rgb(250, 2, 184);
+          color: rgb(250, 2, 184);
+}
+
+.msgP2 {
+          border: 7px double rgb(232,116,0);
+          color: rgb(232,116,0);
+}
