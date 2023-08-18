@@ -1,6 +1,6 @@
 ## TIC TAC TOE
 
-[Visit my Tic-Tac-Toe repository](https://khuzaima-a.github.io/Tic-Tac-Toe/)
+[Live Demo](https://khuzaima-a.github.io/Tic-Tac-Toe/)
 
 #### Starting Page
 ![FORM](../README/form.PNG)
