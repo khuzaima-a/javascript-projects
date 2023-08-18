@@ -1,4 +1,4 @@
-## TIC TAC TOE [Live Demo](khuzaima-a.github.io/Tic-Tac-Toe/)
+## TIC TAC TOE [Live Demo](https://khuzaima-a.github.io/Tic-Tac-Toe/)
 
 
 
