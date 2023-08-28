@@ -1,1 +1,1 @@
-![FAQs](../README/stopwatch.PNG)
+![Stopwatch](../README/stopwatch.PNG)
